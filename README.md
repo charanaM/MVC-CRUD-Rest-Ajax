@@ -25,7 +25,7 @@ Project environment
 
 How to build the project
 ------------------------
-
+First of all, you will need to create a database using mysql.
 
 
 
