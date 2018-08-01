@@ -47,44 +47,48 @@
 
             <div class="form-group">
                 <label for="name" style="margin-left:20px; margin-right:5px">Name:&emsp;&emsp;&emsp;</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" required/>
             </div>
             <br>
 
             <div class="form-group">
                 <label for="age" style="margin-left:20px; margin-right:5px">Age:&emsp;&emsp;&emsp;&emsp;</label>
-                <input type="text" class="form-control" id="age" placeholder="Enter Age"/>
+                <input type="text" class="form-control" id="age" placeholder="Enter Age" required/>
             </div>
             <br>
 
 
             <div class="form-group">
                 <label for="address" style="margin-left:20px; margin-right:5px">Address:&emsp;&emsp;</label>
-                <input type="text" class="form-control" id="address" placeholder="Enter Address"/>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address" required/>
             </div>
             <br>
 
 
             <div class="form-group">
                 <label for="username" style="margin-left:20px; margin-right:5px">Username:&emsp;</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter Username"/>
+                <input type="text" class="form-control" id="username" placeholder="Enter Username" required/>
             </div>
             <br>
 
 
             <div class="form-group">
                 <label for="password" style="margin-left:20px; margin-right:5px">Password:&emsp;</label>
-                <input type="text" class="form-control" id="password" placeholder="Enter Password"/>
+                <input type="text" class="form-control" id="password" placeholder="Enter Password" required/>
             </div>
             <br><br>
 
 
-            <button type="submit" class="btn btn-default" style="margin-left:20px; margin-right:5px" onclick="onSubmit()">Submit</button>
+            <button type="submit" class="btn btn-default" style="margin-left:20px; margin-right:5px">Submit</button>
         </form>
     </div>
 
+    <button type="button" class="btn btn-default" style="margin-left:20px; margin-right:5px" onclick="onHomeClick()">Home Page</button>
+
     <div class="col-sm-7" id="postResultDiv">
     </div>
+
+
 
 </div>
 
@@ -94,7 +98,7 @@
 <script src="/resources/static/js/putrequest.js"></script>
 
 <script>
-    function onSubmit() {
+    function onHomeClick() {
         location.href="/";
 
     }

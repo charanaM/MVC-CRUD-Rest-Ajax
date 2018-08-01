@@ -15,6 +15,7 @@ package com.hms.dao;
 import com.hms.dao.UserDAO;
 import com.hms.map.UserMapper;
 import com.hms.model.User;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
@@ -91,9 +92,15 @@ public class UserDAOImplementationSQL implements UserDAO {
 
     @Override
     public User getUserEdit(int userId) {
-        String getUserQuery = "SELECT user_id, name, age, address, username, password FROM user_info WHERE user_id = ?";
-        //jdbcTemplate.queryForObject(getUserQuery, userId);
-        return null;
+        String getUserQuery = "SELECT * FROM user_info WHERE user_id = ?";
+        User user = null;
+        try{
+            user = jdbcTemplate.queryForObject(getUserQuery, new Object[]{userId}, new UserMapper());
+        } catch (DataAccessException e){
+            e.printStackTrace();
+        }
+
+        return user;
     }
 
 

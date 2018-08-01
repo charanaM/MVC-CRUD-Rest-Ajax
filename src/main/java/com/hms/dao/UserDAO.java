@@ -23,20 +23,53 @@ import java.util.List;
 public interface UserDAO {
 
 
+    /**
+     * method to add a new user
+     * @param user
+     */
     public void addUser(User user);
 
 
+
+    /**
+     * method to list all the current users
+     * @return
+     */
     public List<User> getAllUsers();
 
 
+
+    /**
+     * method to delete a specific user
+     * @param userId
+     */
     public void deleteUser(Integer userId);
 
 
+
+    /**
+     * method to update a specific user
+     * @param user
+     * @return
+     */
     public User updateUser(User user);
 
 
+
+    /**
+     * method to get a specific user for the delete request
+     * @param userid
+     * @return
+     */
     public User getUser(int userid);
 
+
+
+    /**
+     * method to get a specific user for the put request
+     * @param userid
+     * @return
+     */
     public User getUserEdit(int userid);
 
 }

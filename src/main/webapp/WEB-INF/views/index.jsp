@@ -49,7 +49,7 @@
 
     <form class="form-inline" style="margin:20px 20px 20px 20px" id="deleteForm">
         <div class="form-group">
-            <input type="text" class="form-control" id="delete_id" placeholder="Enter ID"/>
+            <input type="text" class="form-control" id="delete_id" placeholder="Enter ID" required/>
 
         <br><br>
 
@@ -89,7 +89,6 @@
     function editUser() {
         var id = $("#delete_id").val();
 
-        //session.setAttribute("userId", user_id);
         window.location.href="/userEditForm/?id="+id;
     }
 </script>

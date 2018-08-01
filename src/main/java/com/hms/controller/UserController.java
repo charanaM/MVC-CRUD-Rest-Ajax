@@ -35,9 +35,9 @@ public class UserController {
 
 
 
-
-
-    //method to get a dummy user
+        /**
+     * method to get a dummy user
+     */
     @RequestMapping(value = UserRestURIConstants.DUMMY_USER, method = RequestMethod.GET)
     public @ResponseBody
     User getDummyUser() {
@@ -55,7 +55,11 @@ public class UserController {
 
 
 
-    //method to get a specific user
+    /**
+     * method to get a specific user
+     * @param userId
+     * @return
+     */
     @RequestMapping(value = UserRestURIConstants.GET_USER, method = RequestMethod.GET)
     public @ResponseBody
     User getUser(@PathVariable("id") int userId) {
@@ -66,7 +70,10 @@ public class UserController {
 
 
 
-    //method to get all users
+    /**
+     * method to get all users
+     * @return
+     */
     @RequestMapping(value = UserRestURIConstants.GET_ALL_USER, method = RequestMethod.GET)
     public @ResponseBody
     List<User> getAllUsers() {
@@ -76,8 +83,11 @@ public class UserController {
 
 
 
-
-    //method to create new user
+    /**
+     * method to create new user
+     * @param user
+     * @return
+     */
     @RequestMapping(value = UserRestURIConstants.CREATE_USER, method = RequestMethod.POST)
     public @ResponseBody
     User createUser(@RequestBody User user) {
@@ -88,9 +98,11 @@ public class UserController {
 
 
 
-
-
-    //method to delete a user
+    /**
+     * method to delete a user
+     * @param userId
+     * @return
+     */
     @RequestMapping(value = UserRestURIConstants.DELETE_USER, method = RequestMethod.DELETE)
     public @ResponseBody
     User deleteUser(@PathVariable("id") int userId) {
@@ -102,9 +114,12 @@ public class UserController {
 
 
 
-
-
-    //method to update user
+    /**
+     * method to update user
+     * @param user
+     * @param userId
+     * @return
+     */
     @RequestMapping(value = UserRestURIConstants.UPDATE_USER, method = RequestMethod.PUT)
     public @ResponseBody
     User updateUser(@RequestBody User user, @PathVariable("id") int userId) {

@@ -34,7 +34,15 @@ function ajaxDelete(){
         type : "DELETE",
         contentType : "application/json",
         url : window.location + "/rest/user/delete/"+user_id,
+        success: function (result) {
+            console.log("Success: " + result);
+        },
+        error: function (e) {
+            console.log("Fail: ");
+        }
     });
+
+
 
     $("#delete_id").val("");
 

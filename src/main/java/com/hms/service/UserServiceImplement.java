@@ -20,8 +20,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-//import org.springframework.context.annotation.ComponentScan;
-//import org.springframework.context.annotation.Configuration;
 
 /**
  * implementation of the service layer interface
@@ -29,8 +27,6 @@ import java.util.List;
 
 @Service
 @Transactional
-//@Configuration
-//@ComponentScan("com.hms.service")
 public class UserServiceImplement implements UserService {
 
     @Autowired
@@ -69,14 +65,8 @@ public class UserServiceImplement implements UserService {
 
 
     public User getUserEdit(int userid) {
-        return userDAO.getUser(userid);
+        return userDAO.getUserEdit(userid);
     }
 
-
-
-
-    public void setUserDAO(UserDAO userDAO) {
-        this.userDAO = userDAO;
-    }
 
 }
