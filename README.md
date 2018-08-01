@@ -18,9 +18,9 @@ These instructions will get you a copy of the project up and running on your loc
 Project environment
 -------------------
 
-* *java version "1.8.0_171"
-* *Apache Maven 3.2.1
-* *MySQL : Server version: 5.6.28 MySQL Community Server
+* java version "1.8.0_171"
+* Apache Maven 3.2.1
+* MySQL : Server version: 5.6.28 MySQL Community Server
 
 
 How to build the project
@@ -34,13 +34,6 @@ How to build the project
 
 
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
