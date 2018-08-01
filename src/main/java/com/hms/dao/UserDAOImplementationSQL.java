@@ -26,7 +26,7 @@ import java.util.List;
  *
  */
 
-public class UserDAOSql implements UserDAO {
+public class UserDAOImplementationSQL implements UserDAO {
 
     private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
@@ -84,8 +84,6 @@ public class UserDAOSql implements UserDAO {
     //get user query
     @Override
     public User getUser(int userId) {
-//        String getUserQuery = "SELECT user_id, name, age, address, username, password FROM user_info WHERE user_id = ?";
-//        jdbcTemplate.queryForObject(getUserQuery, Object[]{userId}, new UserMapper());
         return null;
     }
 

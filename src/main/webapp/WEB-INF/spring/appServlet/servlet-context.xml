@@ -47,7 +47,7 @@
 	</beans:bean>
 
 	<!-- JDBC Template bean-->
-	<beans:bean id="userJDBCTemplate" class="com.hms.dao.UserDAOSql">
+	<beans:bean id="userJDBCTemplate" class="com.hms.dao.UserDAOImplementationSQL">
 		<beans:property name="dataSource" ref="dataSource"/>
 	</beans:bean>
 	
