@@ -14,17 +14,13 @@ Available features are,
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 
 Project environment
 -------------------
 
-*java version "1.8.0_171"
-*Apache Maven 3.2.1
-*MySQL : Server version: 5.6.28 MySQL Community Server
+* *java version "1.8.0_171"
+* *Apache Maven 3.2.1
+* *MySQL : Server version: 5.6.28 MySQL Community Server
 
 
 How to build the project
@@ -33,9 +29,10 @@ How to build the project
 
 
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+
+
 
 ### Prerequisites
 
