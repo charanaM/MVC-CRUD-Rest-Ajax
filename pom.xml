@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.journaldev</groupId>
-	<artifactId>SpringRestExample</artifactId>
-	<name>SpringRestExample</name>
+	<artifactId>SpringRestAjax</artifactId>
+	<name>SpringRestAjax</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -135,6 +135,14 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+			<scope>test</scope>
+		</dependency>
+
 
 		<!-- JDBC -->
 		<dependency>
