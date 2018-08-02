@@ -19,7 +19,7 @@ public class UserRestURIConstants {
 
     //uri constants to map http requests
     public static final String DUMMY_USER = "/rest/user/dummy";
-    public static final String GET_USER = "/rest/user/{id}";
+    public static final String GET_USER = "/userEditForm/rest/user/{id}";
     public static final String GET_ALL_USER = "/rest/users";
     public static final String CREATE_USER = "/userForm/rest/user/create";
     public static final String DELETE_USER = "/rest/user/delete/{id}";
